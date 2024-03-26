@@ -1,6 +1,6 @@
 {
   "name": "your-plugin-name-here",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Template for developers and creators to work on their own plugins for the Sourcepool Server.",
   "main": "src/index.js",
   "scripts": {
