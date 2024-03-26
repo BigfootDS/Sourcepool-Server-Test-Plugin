@@ -13,5 +13,8 @@
     "sourcepool server plugin"
   ],
   "author": "Your Name Here",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  }
 }
