@@ -1,6 +1,6 @@
 {
   "name": "your-plugin-name-here",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Template for developers and creators to work on their own plugins for the Sourcepool Server.",
   "author": "Your Name Here",
   "sourcepool": {
