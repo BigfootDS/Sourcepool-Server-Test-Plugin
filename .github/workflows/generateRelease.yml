@@ -78,7 +78,7 @@ jobs:
         run: ls
       
       - name: ZIP up the plugin code
-        run: zip -j -r ${{ steps.repo-name.outputs.repository-name }}.zip ./*
+        run: zip -r ${{ steps.repo-name.outputs.repository-name }}.zip ./*
 
       - name: Upload Output to Release
         uses: softprops/action-gh-release@v2
