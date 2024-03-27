@@ -2,6 +2,37 @@
   "name": "your-plugin-name-here",
   "version": "0.2.6",
   "description": "Template for developers and creators to work on their own plugins for the Sourcepool Server.",
+  "author": "Your Name Here",
+  "sourcepool": {
+    "thumbnailImageFilePath":"./thumbnail.png",
+    "headerImageFilePath":"./header.png",
+    "descriptionsBrief": [
+      {
+        "language":"en",
+        "content":"Example description in English."
+      },
+      {
+        "language":"fr",
+        "content":"Exemple de description en français."
+      }
+    ],
+    "descriptionsFull": [
+      {
+        "language":"en",
+        "content":"Example long description in English."
+      },
+      {
+        "language":"fr",
+        "content":"Exemple de description longue en français."
+      }
+    ],
+    "tags": [
+      {
+        "language":"en",
+        "content":"example-tag"
+      }
+    ]
+  },
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
@@ -12,7 +43,6 @@
     "sourcepool-server-plugin",
     "sourcepool server plugin"
   ],
-  "author": "Your Name Here",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "cowsay": "^1.6.0"
