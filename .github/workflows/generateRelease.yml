@@ -85,7 +85,7 @@ jobs:
         with:
           tag_name: ${{ needs.draft_release.outputs.release_version }}
           draft: true
-          files: ${{ steps.repo-name.outputs.repository-name }}.zip
+          files: ${{ github.event.repository.name }}.zip
 
   make_release:
     needs: [draft_release, generate_output]
