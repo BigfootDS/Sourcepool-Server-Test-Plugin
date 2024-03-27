@@ -70,15 +70,15 @@ jobs:
         with:
           node-version: lts/*       
 
-      - name: Get Repository Name
-        id: repo-name
-        uses: MariachiBear/get-repo-name-action@v1.2.0
+      # - name: Get Repository Name
+      #   id: repo-name
+      #   uses: MariachiBear/get-repo-name-action@v1.2.0
 
       - name: Check for files
         run: ls
       
       - name: ZIP up the plugin code
-        run: zip -r ${{ steps.repo-name.outputs.repository-name }}.zip ./*
+        run: zip -r ${{ github.event.repository.name }}.zip ./*
 
       - name: Upload Output to Release
         uses: softprops/action-gh-release@v2
