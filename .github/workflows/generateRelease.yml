@@ -75,7 +75,7 @@ jobs:
         uses: MariachiBear/get-repo-name-action@v1.2.0
       
       - name: ZIP up the plugin code
-        run: zip -j ${{ steps.repo-name.outputs.repository-name }}.zip .
+        run: zip -j ${{ steps.repo-name.outputs.repository-name }}.zip ./
 
       - name: Upload Output to Release
         uses: softprops/action-gh-release@v2
