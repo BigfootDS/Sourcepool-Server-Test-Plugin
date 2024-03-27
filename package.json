@@ -1,35 +1,35 @@
 {
   "name": "your-plugin-name-here",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Template for developers and creators to work on their own plugins for the Sourcepool Server.",
   "author": "Your Name Here",
   "sourcepool": {
-    "thumbnailImageFilePath":"./thumbnail.png",
-    "headerImageFilePath":"./header.png",
+    "thumbnailImageFilePath": "./thumbnail.png",
+    "headerImageFilePath": "./header.png",
     "descriptionsBrief": [
       {
-        "language":"en",
-        "content":"Example description in English."
+        "language": "en",
+        "content": "Example description in English."
       },
       {
-        "language":"fr",
-        "content":"Exemple de description en français."
+        "language": "fr",
+        "content": "Exemple de description en français."
       }
     ],
     "descriptionsFull": [
       {
-        "language":"en",
-        "content":"Example long description in English."
+        "language": "en",
+        "content": "Example long description in English."
       },
       {
-        "language":"fr",
-        "content":"Exemple de description longue en français."
+        "language": "fr",
+        "content": "Exemple de description longue en français."
       }
     ],
     "tags": [
       {
-        "language":"en",
-        "content":"example-tag"
+        "language": "en",
+        "content": "example-tag"
       }
     ]
   },
