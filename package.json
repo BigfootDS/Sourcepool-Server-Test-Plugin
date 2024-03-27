@@ -1,12 +1,12 @@
 {
   "name": "your-plugin-name-here",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Template for developers and creators to work on their own plugins for the Sourcepool Server.",
   "author": "Your Name Here",
   "sourcepool": {
-    "namespace":"YourOrganisationNameHere",
+    "namespace": "YourOrganisationNameHere",
     "sourceUrl": "https://github.com/BigfootDS/Sourcepool-Server-Test-Plugin",
-    "loadPriority":1,
+    "loadPriority": 1,
     "thumbnailImageFilePath": "./thumbnail.png",
     "headerImageFilePath": "./header.png",
     "descriptionsBrief": [
