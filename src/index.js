@@ -1,13 +1,8 @@
 const scopedPackageJson = require('../package.json');
 
-const installerProcess = require("node:child_process");
-
 async function pluginCode(){
 	const cowsay = require("cowsay");
-
-
-	console.log(`Sourcepool plugin ${scopedPackageJson.name} loading.`);
-
+	console.log(cowsay.say({text:"Hello, I'm a Sourcepool plugin!"}));
 
 	console.debug(JSON.stringify({
 		availableModels: global.modelUtils || "No models available.",
@@ -15,9 +10,8 @@ async function pluginCode(){
 		serverPluginsDirectory: global.serverPlugins || "No server plugins path available."
 	}, null, 4));
 
-	console.log(cowsay.say({text:"Hello, I'm a cow!"}));
+	console.log(`Sourcepool plugin ${scopedPackageJson.name} completed.`)
 
-	console.log(`Sourcepool plugin ${scopedPackageJson.name} completed loading.`)
 }
 
 /**
@@ -27,7 +21,11 @@ async function pluginCode(){
  * in the plugin's download!
  */
 async function startPlugin(){
-	pluginCode();
+	console.log(`Sourcepool plugin ${scopedPackageJson.name} starting.`);
+
+	await pluginCode();
+
+
 }
 
 
