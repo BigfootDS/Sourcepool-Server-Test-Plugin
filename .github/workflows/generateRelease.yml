@@ -73,6 +73,9 @@ jobs:
       - name: Get Repository Name
         id: repo-name
         uses: MariachiBear/get-repo-name-action@v1.2.0
+
+      - name: Check for files
+        run: ls
       
       - name: ZIP up the plugin code
         run: zip -j ${{ steps.repo-name.outputs.repository-name }}.zip ./
